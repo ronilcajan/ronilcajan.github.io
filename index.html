@@ -27,7 +27,6 @@
 .closebtn:hover {
   color: black;
 }
-
     </style>
 </head>
 <body class="is-preload">
@@ -209,6 +208,17 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        var site = window.location.href;
+        alert(site);
+        if(site =! "https://ronilcajan.github.io/#alert"){
+            document.getElementById("alert").style.display = "none";
+        }else{
+            document.getElementById("alert").style.display = "block";
+        }
+})
 
+</script>
 </body>
 </html>
