@@ -27,9 +27,6 @@
 .closebtn:hover {
   color: black;
 }
-.alert{
-display:none;
-}
     </style>
 </head>
 <body class="is-preload">
@@ -153,21 +150,21 @@ display:none;
                 </div>
             </div>
         </section>
-
-        <section id="alert">
-            <div class="alert">
+        <?php
+            $alert = $_GET(['alert']);
+            if ($alert == "success"){
+            echo '<section id="alert"><div class="alert">
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                 <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-            </div>
-        </section>
-
+            </div></section>'
+        ?>
         <section id="contact">
             <div class="container">
                 <h3>Contact Me</h3>
                 <p class="icon solid fa-address-card"><span class="label">Address</span> Looc Proper, Plaridel, Misamis
                     Occidental, Philippines 7209</p>
                 <form action="https://formsubmit.io/send/04f2212d-8220-42ca-87be-54cd385368ba" method="POST">
-                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io/#alert">
+                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io?alert=succes">
                     <div class="row gtr-uniform">
                         <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
                                                                 placeholder="Your Name"/></div>
