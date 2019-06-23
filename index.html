@@ -27,6 +27,9 @@
 .closebtn:hover {
   color: black;
 }
+.alert{
+display:none;
+}
     </style>
 </head>
 <body class="is-preload">
@@ -164,7 +167,7 @@
                 <p class="icon solid fa-address-card"><span class="label">Address</span> Looc Proper, Plaridel, Misamis
                     Occidental, Philippines 7209</p>
                 <form action="https://formsubmit.io/send/04f2212d-8220-42ca-87be-54cd385368ba" method="POST">
-                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io/alert">
+                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io/1">
                     <div class="row gtr-uniform">
                         <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
                                                                 placeholder="Your Name"/></div>
@@ -208,13 +211,11 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
+<script type="text/javascript">
     $(document).ready(function(){
         var site = window.location.href;
-        if(site =! "https://ronilcajan.github.io/alert"){
-            document.getElementById("alert").style.display = "none";
-        }else{
-            document.getElementById("alert").style.display = "block";
+        if(site == "https://ronilcajan.github.io/1"){
+            document.getElementById("section.alert").style.visibility='visible';
         }
 })
 
