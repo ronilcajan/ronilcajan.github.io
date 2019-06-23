@@ -43,7 +43,7 @@
             <li><a href="#about" class="active">About</a></li>
             <li><a href="#technology">Technology Capable of</a></li>
             <li><a href="#accomplishment">A Few Accomplishments</a></li>
-            <li><a href="#alert">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <footer>
@@ -164,7 +164,7 @@
                 <p class="icon solid fa-address-card"><span class="label">Address</span> Looc Proper, Plaridel, Misamis
                     Occidental, Philippines 7209</p>
                 <form action="https://formsubmit.io/send/04f2212d-8220-42ca-87be-54cd385368ba" method="POST">
-                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io/#contact">
+                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io/alert">
                     <div class="row gtr-uniform">
                         <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
                                                                 placeholder="Your Name"/></div>
@@ -211,8 +211,7 @@
 <script>
     $(document).ready(function(){
         var site = window.location.href;
-        alert(site);
-        if(site =! "https://ronilcajan.github.io/#alert"){
+        if(site =! "https://ronilcajan.github.io/alert"){
             document.getElementById("alert").style.display = "none";
         }else{
             document.getElementById("alert").style.display = "block";
