@@ -48,7 +48,7 @@
 	}
 
 	article, aside, details, figcaption, figure,
-	footer, header, hgroup, menu, nav, section {
+	footer, header, hgroup, menu, nav, section, video {
 		display: block;
 	}
 
@@ -325,7 +325,7 @@
 
 /* Section/Article */
 
-	section, article {
+	section, article, video {
 		&.special {
 			text-align: center;
 		}

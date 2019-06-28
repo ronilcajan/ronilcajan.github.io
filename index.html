@@ -27,6 +27,29 @@
 .closebtn:hover {
   color: black;
 }
+#button-user{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+#site{
+    color:white;
+    width: 20%;
+    text-align: center;
+    background-color: #cccccc;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 4px;
+}
+#icon-contain{
+    display: flex;
+    flex-wrap: wrap;
+}
+#icon-use{
+    display: inline;
+    margin: 10px 0 0 10px;
+}
     </style>
 </head>
 <body class="is-preload">
@@ -48,12 +71,6 @@
     </nav>
     <footer>
         <ul class="icons">
-            <li><a href="https://www.twitter.com/RonCajan" class="icon brands fa-twitter" target="_blank"><span
-                    class="label">Twitter</span></a></li>
-            <li><a href="https://www.facebook.com/cajanr" class="icon brands fa-facebook-f" target="_blank"><span
-                    class="label">Facebook</span></a></li>
-            <li><a href="https://www.instagram.com/c_roonil" class="icon brands fa-instagram" target="_blank"><span
-                    class="label">Instagram</span></a></li>
             <li><a href="https://www.github.com/ronilcajan" class="icon brands fa-github" target="_blank"><span
                     class="label">Github</span></a></li>
             <li><a href="https://www.linkedin.com/in/roncajan" class="icon brands fa-linkedin" target="_blank"><span
@@ -77,7 +94,7 @@
             </div>
             <div class="container">
                 <header class="major">
-                    <h2>My Portfolio</h2>
+                    <h2>MY PORTFOLIO</h2>
                     <p>Not just a developer but a problem solver.</p>
                 </header>
                 <h3>About Me</h3>
@@ -117,16 +134,43 @@
         <section id="accomplishment">
             <div class="container">
                 <h3>A Few Accomplishments</h3>
-                <p>One of the best feeling is when someone using your works and seeing they love what they see. Below is
-                    my latest sample works.</p>
                 <div class="features">
+                        <article>
+                                <a href="https://www.youtube.com/watch?v=JNHXUDmNwag&t" target="_blank" class="image"><img
+                                    src="images/pos.png" alt=""/></a>
+                                <div class="inner">
+                                    <h4>Point of Sale</h4>
+                                    <p>A simple web-based Point of sale.</p>
+                                    <div id="button-user">
+                                        <a href="https://github.com/ronilcajan/PointOfSale/" id="site" class="icon brands fa-github" target="_blank">
+                                            <span style="margin-left: 5px;">Code</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=JNHXUDmNwag&t" id="site" class="icon brands fa-youtube" target="_blank">
+                                        <span>Youtube</span></a>
+                                    </div>
+                                    <div id="icon-contain">
+                                        <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
+                                        <img id="icon-use" src="images/php.png" height="20" width="20"/>
+                                        <img id="icon-use" src="images/sql.png" height="20" width="20"/>
+                                        <img id="icon-use" src="images/jquery.png" height="20" width="20"/>
+                                        <img id="icon-use" src="images/bootstrap.png" height="20" width="20"/>
+                                    </div>
+                                </div>
+                            </article>
                     <article>
                         <a href="https://www.theamariebakehaus.com/" target="_blank" class="image"><img
                                 src="images/thea.png" alt=""/></a>
                         <div class="inner">
                             <h4>Thea Marie Bakehaus</h4>
-                            <p>A small, family owned and managed single proprietorship bakery in the suburb of Tangub
-                                City.</p>
+                            <p>A small, family owned and managed single proprietorship bakery in the suburb of Tangub City.</p> 
+                            <div id="button-user">
+                            <a href="https://www.theamariebakehaus.com/" id="site" target="_blank">View Site</a>
+                        </div>
+                            <div id="icon-contain">
+                                    <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
+                                    <img id="icon-use" src="images/wordpress.png" height="20" width="20"/>
+                                </div>
+                                
                         </div>
                     </article>
                     <article>
@@ -134,17 +178,30 @@
                         <div class="inner">
                             <h4>Bambam Food Products</h4>
                             <p>A family company that specialized in all kinds of cakes and can cater wedding cakes,
-                                birthdays and other celebrations.</p>
+                                birthdays and other celebrations. 
+                                <div id="button-user">
+                                <a href="https://www.bambamfoodproducts.com" target="_blank" id="site">View Site</a>
+                                </div>
+                                <div id="icon-contain">
+                                        <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
+                                        <img id="icon-use" src="images/wordpress.png" height="20" width="20"/>
+                                    </div>
+                            </p>
                         </div>
                     </article>
                     <article>
-                        <a href="https://www.bravoinfiniteweb.com" target="_blank" class="image"><img src="images/bravo.png"
-                                                                                      alt=""/></a>
+                        <a href="https://www.bravoinfiniteweb.com" target="_blank" class="image"><img src="images/bravo.png" alt=""/></a>
                         <div class="inner">
                             <h4>Bravo Infinite Enterprise</h4>
-                            <p>Owned by Engr. Julius B. Bularon, an experienced practitioner in engineering and
-                                entrepreneurship with a substantial exposure in product development and packaging
-                                solutions.</p>
+                            <p>Owned by Engr. Julius B. Bularon, an experienced practitioner in engineering.
+                            </p>
+                            <div id="button-user">   
+                            <a href="https://www.bravoinfiniteweb.com" id="site" target="_blank">View Site</a>
+                            </div>    
+                            <div id="icon-contain">
+                                        <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
+                                        <img id="icon-use" src="images/wordpress.png" height="20" width="20"/>
+                                    </div>
                         </div>
                     </article>
                 </div>
@@ -152,7 +209,7 @@
         </section>
         <section id="contact">
             <div class="container">
-                <h3>Contact Me</h3>
+                <h3>Let's work together</h3>
                 <p class="icon solid fa-address-card"><span class="label">Address</span> Looc Proper, Plaridel, Misamis
                     Occidental, Philippines 7209</p>
                 <form action="https://formsubmit.io/send/04f2212d-8220-42ca-87be-54cd385368ba" method="POST">
