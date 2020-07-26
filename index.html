@@ -1,259 +1,246 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Ronil Cajan Portfolio</title>
-    <meta charset="utf-8"/>
-    <meta name="referrer" content="origin">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="shortcut icon" href="images/mypics.jpg" type="image/x-icon"/>
-    <style>
-.alert {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="Ronil Cajan is a web developer.Show-casing his skills and projects.">
+	    <meta name="author" content="Ronil Cajan, PHP Web Developer">
+	    <link rel="icon" type="image/png" sizes="180x180" href="images/ron_cajan_logo.png"/>
+	    <title>Ronil Cajan · Portfolio</title>
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-#button-user{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
-}
-#site{
-    color:white;
-    width: 20%;
-    text-align: center;
-    background-color: #cccccc;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-right: 4px;
-}
-#icon-contain{
-    display: flex;
-    flex-wrap: wrap;
-}
-#icon-use{
-    display: inline;
-    margin: 10px 0 0 10px;
-}
-    </style>
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	    <!-- Custom styles for this template -->
+	    <link href="assets/css/mystyle.css" rel="stylesheet"/>
+	    <script src="https://unpkg.com/feather-icons"></script>
+	    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="is-preload">
+	</head>
+	<body>
+	    <div class="containter-fluid">
+	  		<header class="">
+		    	<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+					   	<a class="navbar-brand" href="#" data-page="home">
+					   		<img class="img-fluid" height="30" width="30" src="images/ron_cajan_logo.png" alt="Ron Cajan Logo">
+					   	</a>
+					    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					      <i data-feather="menu"></i>
+					    </button>
 
-<!-- Header -->
-<section id="header">
-    <header>
-        <span class="image avatar"><img src="images/mypics.jpg" alt=""/></span>
-        <h1 id="logo"><a href="#">Ronil Cajan</a></h1>
-        <p>A Web Developer</p>
-    </header>
-    <nav id="nav">
-        <ul>
-            <li><a href="#about" class="active">About</a></li>
-            <li><a href="#technology">Technology Capable of</a></li>
-            <li><a href="#accomplishment">A Few Accomplishments</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <footer>
-        <ul class="icons">
-            <li><a href="https://www.github.com/ronilcajan" class="icon brands fa-github" target="_blank" title="Github"><span
-                    class="label">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/roncajan" class="icon brands fa-linkedin" target="_blank" title="LinkedIn"><span
-                    class="label">LinkedIn</span></a></li>
-            <li><a href="mailto:cajanronil@gmail.com?Subject=Hello%20again" target="_top"
-                   class="icon solid fa-envelope" title="Contact Email"><span class="label">Email</span></a></li>
-            <li><a href="images/resume.pdf" class="icon fa-file" target="_blank" title="Resume"><span
-                    class="label">Resume</span></a></li>
-        </ul>
-    </footer>
-</section>
+					    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					      	
+					      	<ul class="navbar-nav">
+						        <li class="nav-item">
+						          	<a class="nav-link" href="#" data-page="about">
+							          	<i style="width: 16px;" data-feather="user"></i> About
+									</a>
+						        </li>
+						        <li class="nav-item ">
+						          <a class="nav-link" href="#" data-page="project">
+						          	<i style="width: 16px;"  class="icon"  data-feather="code"></i> Project</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link" href="#" data-page="skills">
+						          	<i style="width: 16px;"  class="icon"  data-feather="tool"></i> Skills</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link" href="#" data-page="interest">
+						          	<i style="width: 16px;"  class="icon"  data-feather="heart"></i> Interest</a>
+						        </li>
+					      	</ul>
+					    </div>
+					</div>
+				</nav>
+		  	</header>
+			
+			<section id="home" class="text-center">
+				<div id="particles"></div>
+				<div class="content">
+					<img class="img-fluid rounded-circle img-thumbnail border" src="images/ron_cajan_avatar.png" height="100" width="100">
+					<p class="mb-0">Hi, I Am</p>
+				    <h1 class="cover-heading">Ronil Cajan</h1>
+				    <p class="lead">I Build Things for The Web.</p>
+				    <p class="lead mb-4">
+				      <a href='#' data-page="contacts" class="btn btn-lg btn-connect" >Let's Connect!</a>
+				    </p>
+				    <div class="d-flex justify-content-center mb-5">
+			    		<a href="https://github.com/ronilcajan" target="_blank" class="icons ml-3 mr-3" title="My Github Code"><i class="icon" data-feather="github"></i></a>
+			    		<a href="https://www.linkedin.com/in/roncajan" target="_blank" class="icons ml-3 mr-3" title="My Linkedin Profile"><i class="icon"  data-feather="linkedin"></i></a>
+			    		<a class="icons ml-3 mr-3" href="images/resume.pdf" target="_blank" title="Download CV"><i class="icon"  data-feather="file-text"></i></a>
+				    </div>
+				    <a href="#" data-page="about" title="Scroll Down">
+				    	<i class="arrow-down"  data-feather="chevrons-down">
+				    </i></a>
+				</div>
 
-<!-- Wrapper -->
-<div id="wrapper">
+			</section>
 
-    <!-- Main -->
-    <div id="main">
+			<section id="about" class="mx-auto row mt-3 ">
+				<h3 class="text-center"><span>About</span> Me</h3>
+				<div class="col-6 about-content" data-aos="zoom-in-right">
+					<img class="img-fluid" heigh="400" width="400" src="images/ron_cajan_about.jpg">
+				</div>
+				<div class="col-6 about-content" data-aos="zoom-in-left">
+					<p>I am <strong style="color: #008D75;">dedicated and passionate</strong> about creating web experiences that improves business and personal lives.</p>
+					<p>I am focusing on creating web application and website using <strong style="color: #008D75;">PHP and Codeigniter Framework.</strong></p>
+				</div>
+			</section>
 
-        <!-- about -->
-        <section id="about">
-            <div class="image main" data-position="center">
-                <img src="images/cover.jpg" alt=""/>
-            </div>
-            <div class="container">
-                <header class="major">
-                    <h2>MY PORTFOLIO</h2>
-                    <p>Not just a developer but a problem solver.</p>
-                </header>
-                <h3>About Me</h3>
-                <p>Hi, I am currently a 4th year student at University of Science and Technology of Southern Philippines
-                    Oroquieta Campus taking up Bachelor of Science in Information Technology. I can create website based
-                    on
-                    my current abilities. I already created website using Wordpress. I love to create things that can
-                    solve
-                    peoples problem.</p>
-            </div>
-        </section>
+			<section id="project" class="mx-auto row">
+				<h3 class="text-center">Recent <span>Projects</span></h3><br>
+				<div class="card-group">
+  					<div class="row row-cols-1 row-cols-md-3 g-4">
+  						<div class="col" data-aos="zoom-in">
+						    <div class="card h-100 shadow" >
+						      	<img src="images/claims.png" class="card-img-top img-fluid" alt="...">
+						      	<div class="card-body">
+							        <h5 class="card-title font-weight-bold">Loan Application System</h5>
+							        <p class="card-text">This is a web-based loan application system built with Codeigniter 3 framework.</p>
+							        <div class="d-flex justify-content-start">
+							    		<a class="icons text-danger" href="https://www.youtube.com/watch?v=ihYryjkfa7k&t" target="_blank" title="Youtube Demo"><i class="icon" data-feather="youtube"></i></a>
+							    		<a class="icons ml-2 text-secondary" href="https://github.com/ronilcajan/CLAIMS-Loan-Information-System" target="_blank" title="Source Code"><i class="icon"  data-feather="github"></i></a>
+								    </div>
+						      	</div>
+						      	<div class="card-footer">
+					        		<small class="text-muted">Technology used:</small>
+					        		<img src="images/codeigniter.svg" width="20" class="img-fluid" alt="...">
+					        		<img src="images/bootstrap.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/jquery.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/sql.png" width="20" class="img-fluid" alt="...">
+						      	</div>
+						    </div>
+					  	</div>
+						<div class="col" data-aos="zoom-in">
+						    <div class="card h-100 shadow">
+							    <img src="images/shoutout.png" class="card-img-top img-fluid" alt="...">
+							    <div class="card-body">
+							        <h5 class="card-title font-weight-bold">ShoutOut</h5>
+							        <p class="card-text">This is a simple social media web app built with codeigniter 3 framework.</p>
+							        <div class="d-flex justify-content-start">
+							    		<a class="icons text-danger" href="https://www.youtube.com/watch?v=kjO7qo3ns28" target="_blank" title="Youtube Demo"><i class="icon" data-feather="youtube"></i></a>
+							    		<a class="icons ml-2 text-secondary" href="https://github.com/ronilcajan/shoutout" target="_blank" title="Source Code"><i class="icon"  data-feather="github"></i></a>
+								    </div>
+							    </div>
+							    <div class="card-footer">
+							        <small class="text-muted">Technology used:</small>
+					        		<img src="images/codeigniter.svg" width="20" class="img-fluid" alt="...">
+					        		<img src="images/bootstrap.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/jquery.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/sql.png" width="20" class="img-fluid" alt="...">
+							    </div>
+						    </div>
+						</div>
+						<div class="col" data-aos="zoom-in">
+					    	<div class="card h-100 shadow">
+					      		<img src="images/pos.png" class="card-img-top img-fluid" alt="...">
+				      			<div class="card-body">
+				        			<h5 class="card-title font-weight-bold">Point of Sale on PHP</h5>
+				        			<p class="card-text">This is a simple web-based POS system using PHP language.</p>
+				        			<div class="d-flex justify-content-start">
+							    		<a class="icons text-danger" href="https://www.youtube.com/watch?v=JNHXUDmNwag" target="_blank" title="Youtube Demo"><i class="icon" data-feather="youtube"></i></a>
+							    		<a class="icons ml-2 text-secondary" href="https://github.com/ronilcajan/PointOfSale" target="_blank" title="Source Code"><i class="icon"  data-feather="github"></i></a>
+								    </div>
+				        		</div> 
+					      		<div class="card-footer">
+					        		<small class="text-muted">Technology used:</small>
+					        		<img src="images/php.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/bootstrap.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/jquery.png" width="20" class="img-fluid" alt="...">
+					        		<img src="images/sql.png" width="20" class="img-fluid" alt="...">
+					      		</div>
+					      	</div>
+					  	</div>
+					</div>
+				</div>
+			</section>
 
-        
-        <!-- technology -->
-        <section id="technology">
-            <div class="container">
-                <h3>Technology capable of</h3>
-                <p>Below is the list of technology that I'm familiar so far:</p>
-                <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-bottom:20px;">
-                    <img src="images/html.png" height="50" width="50"/>
-                    <img src="images/css.png" height="50" width="50"/>
-                    <img src="images/js.png" height="50" width="50"/>
-                    <img src="images/bootstrap.png" height="50" width="50"/>
-                    <img src="images/jquery.png" height="50" width="50"/>
-                    <img src="images/codeigniter.svg" height="50" width="50"/>
-                </div>
-                <div style="display:flex; flex-wrap:wrap; justify-content:space-around; margin-bottom:20px;">
-                    <img src="images/php.png" height="50" width="50"/>
-                    <img src="images/wordpress.png" height="50" width="50"/>
-                    <img src="images/sql.png" height="50" width="50"/>
-                    <img src="images/python.png" height="50" width="50"/>
-                    <img src="images/django.png" height="50" width="50"/>
-                    <img src="images/git.png" height="50" width="50"/>
-                </div>
-            </div>
-        </section>
+			<section id="skills" data-scroll="scully" data-scroll-repeat="true">
+	            <div class="container">
+	                <h3 class="text-center"><span>Tools</span> Used</h3>
+	                <div class="tools">
+	                	<img src="images/php.png" height="50" width="50"/>
+	                    <img src="images/codeigniter.svg" height="50" width="50"/>
+	                    <img src="images/js.png" height="50" width="50"/>
+	                    <img src="images/jquery.png" height="50" width="50"/>
+	                    <img src="images/wordpress.png" height="50" width="50"/>
+	                </div>
+	                <div class="tools">
+	                    <img src="images/html.png" height="50" width="50"/>
+	                    <img src="images/css.png" height="50" width="50"/>
+	                    <img src="images/bootstrap.png" height="50" width="50"/>
+	                    <img src="images/sql.png" height="50" width="50"/>
+	                    <img src="images/git.png" height="50" width="50"/>
+	                </div>
+	                <p class="text-center mt-3">This are some tools that I used in my <strong style="color: #008D75;">web development carrier.</strong></p>
+	            </div>
+       		</section>
 
-        <!-- accomplishment -->
-        <section id="accomplishment">
-            <div class="container">
-                <h3>A Few Accomplishments</h3>
-                <div class="features">
-                        <article>
-                                <a href="https://www.youtube.com/watch?v=JNHXUDmNwag&t" target="_blank" class="image"><img
-                                    src="images/pos.png" alt=""/></a>
-                                <div class="inner">
-                                    <h4>Point of Sale</h4>
-                                    <p>A simple web-based Point of sale.</p>
-                                    <div id="button-user">
-                                        <a href="https://github.com/ronilcajan/PointOfSale/" id="site" class="icon brands fa-github" target="_blank">
-                                            <span style="margin-left: 5px;">Code</span>
-                                        </a>
-                                        <a href="https://www.youtube.com/watch?v=JNHXUDmNwag&t" id="site" class="icon brands fa-youtube" target="_blank">
-                                        <span>Youtube</span></a>
-                                    </div>
-                                    <div id="icon-contain">
-                                        <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
-                                        <img id="icon-use" src="images/php.png" height="20" width="20"/>
-                                        <img id="icon-use" src="images/sql.png" height="20" width="20"/>
-                                        <img id="icon-use" src="images/jquery.png" height="20" width="20"/>
-                                        <img id="icon-use" src="images/bootstrap.png" height="20" width="20"/>
-                                    </div>
-                                </div>
-                            </article>
-                    <article>
-                        <a href="https://youtu.be/JX2KH0KlTC4" target="_blank" class="image"><img
-                                src="images/inventory.png" alt=""/></a>
-                        <div class="inner">
-                            <h4>Inventory System</h4>
-                            <p>A simple web inventory system using CodeIgniter 3.</p> 
-                            <div id="button-user">
-                            <a href="https://youtu.be/JX2KH0KlTC4" id="site" target="_blank">Youtube</a>
-                        </div>
-                            <div id="icon-contain">
-                                    <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p>
-                                    <img id="icon-use" src="images/php.png" height="20" width="20"/> 
-                                    <img id="icon-use" src="images/codeigniter.svg" height="20" width="20"/>
-                                    <img id="icon-use" src="images/sql.png" height="20" width="20"/>
-                                    <img id="icon-use" src="images/jquery.png" height="20" width="20"/>
-                                    <img id="icon-use" src="images/bootstrap.png" height="20" width="20"/>
-                                </div>
-                                
-                        </div>
-                    </article>
-                    <article>
-                        <a href="https://youtu.be/kjO7qo3ns28" target="_blank" class="image"><img src="images/shoutout.png" alt=""/></a>
-                        <div class="inner">
-                            <h4>ShoutOut - A Simple Social Media</h4>
-                            <p>A simple social media platform built with CodeIgniter 3.</p>
-                                <div id="button-user">
-                                <a href="https://youtu.be/kjO7qo3ns28" target="_blank" id="site">Youtube</a>
-                                </div>
-                                <div id="icon-contain">
-                                        <p style="margin-top: 5px; font-size:small"><small>Technology:</small></p> 
-                                        <img id="icon-use" src="images/php.png" height="20" width="20"/> 
-                                    <img id="icon-use" src="images/codeigniter.svg" height="20" width="20"/>
-                                    <img id="icon-use" src="images/sql.png" height="20" width="20"/>
-                                    <img id="icon-use" src="images/jquery.png" height="20" width="20"/>
-                                    <img id="icon-use" src="images/bootstrap.png" height="20" width="20"/>
-                                    </div>
-                            </p>
-                        </div>
-                    </article>
-                    
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <h3>Let's work together</h3>
-                <p class="icon solid fa-address-card"><span class="label">Address</span> Philippines </p>
-                <form action="https://formsubmit.io/send/04f2212d-8220-42ca-87be-54cd385368ba" method="POST">
-                    <input name="_redirect" type="hidden" id="name" value="http://ronilcajan.github.io?result=succes">
-                    <div class="row gtr-uniform">
-                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
-                                                                placeholder="Your Name"/></div>
-                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
-                                                                placeholder="Your Email"/></div>
-                        <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject"/></div>
-                        <div class="col-12"><textarea name="message" id="message" placeholder="Your Message"
-                                                      rows="6"></textarea></div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" class="primary" value="Send Message"/></li>
-                                <li><input type="reset" value="Reset Form"/></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input name="_formsubmit_id" type="text" style="display:none">
-                </form>
-            </div>
-        </section>
-    </div>
+       		<section id="interest" class="mx-auto row mt-3">
+				<h3 class="text-center">My <span>Interest</span></h3>
+				<div class="col-6 about-content" data-aos="zoom-in-right">
+					<img class="img-fluid" height="400" width="400" src="images/roncajan_interest.jpg">
+				</div>
+				<div class="col-6 about-content" data-aos="zoom-in-left">
+					<p>I'm a fan of <strong style="color: #008D75;">cryptocurrency and blockchain technology.</strong> This technology helps me to buy my first laptop for my studies in year 2018 through airdrop and referrals. This is when I realized technology is the future.</p>
+					<p>I'm looking forward to build/create a product that is inspired by a <strong style="color: #008D75;">technology like blockchain.</strong></p>
+				</div>
+			</section>
 
-    <!-- Footer -->
-    <section id="footer" style="background-color: #ccc;">
-        <div class="container">
-            <ul class="copyright">
-                <b>
-                    <li>&copy; My Portfolio. All rights reserved.</li>
-                    <li>Ronil Cajan</li>
-                </b>
-            </ul>
-        </div>
-    </section>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-</script>
-</body>
+			<section id="contacts" class="mx-auto row mt-3">
+				<h3 class="text-center"><span>Contact Me</span></h3>
+				<div class="col-sm-3 text-center">
+					<p><i class="icons mb-1" data-feather="mail"></i> <strong>EMAIL</strong></p>
+					<a class="nav-link" href="mailto:cajanr02@gmail.com?Subject=I%20Need%20Web%20Developer" target="_top">cajanr02@gmail.com</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<p><i class="icons mb-1" data-feather="facebook"></i> <strong>FACEBOOK</strong></p>
+					<a class="nav-link" href="https://facebook.com/cajanronil" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> facebook.com/cajanronil</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<p><i class="icons mb-1" data-feather="twitter"></i> <strong>TWITTER</strong></p>
+					<a class="nav-link" href="https://twitter.com/RonCajan" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> @RonCajan</a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<p><i class="icons mb-1" data-feather="linkedin"></i> <strong>LINKEDIN</strong></p>
+					<a class="nav-link" href="https://linkedin.com/in/roncajan" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> linkedin.com/in/roncajan</a>
+				</div>
+			</section>
+			<!-- Footer -->
+		    <footer class="bg-dark text-center text-light">
+		        <div class="container">
+		            <ul class="copyright">
+		                <b class="mt-3">
+		                    <li class="pt-2">&copy; My Portfolio. All rights reserved.</li>
+		                    <li>Ronil Cajan</li>
+		                </b>
+		            </ul>
+		        </div>
+		    </footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<!-- JavaScript and dependencies -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+		
+		<script src="assets/js/particle.js"></script>
+		<script type="text/javascript">
+			particlesJS.load('particles', 'assets/particles.json', function() {
+					console.log('callback - particle.js config loaded');
+			});
+		</script>
+		<script>
+	      feather.replace()
+	    </script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  		<script>
+		    AOS.init();
+		 </script>
+        <script type="text/javascript">
+        	$("a").click(function(){
+			  var pageId = $(this).attr("data-page");
+			  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
+			});
+        </script>
+	</body>
 </html>
