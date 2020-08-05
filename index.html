@@ -73,7 +73,14 @@
 				    	<i class="arrow-down"  data-feather="chevrons-down">
 				    </i></a>
 				</div>
-
+				<!-- Load Facebook SDK for JavaScript -->
+      		<div id="fb-root"></div>
+      			<!-- Your Chat Plugin code -->
+		      <div class="fb-customerchat" attribution=setup_tool page_id="107359324125283" 
+		      		theme_color="#13cf13"
+				  	logged_in_greeting="Hi! How can I help you?"
+				  	logged_out_greeting="Hi! How can I help you?">
+		      </div>
 			</section>
 
 			<section id="about" class="mx-auto row mt-3 " style="overflow-x:hidden;">
@@ -246,5 +253,22 @@
 			  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
 			});
         </script>
+
+        <script>
+		        window.fbAsyncInit = function() {
+		          	FB.init({
+		            	xfbml            : true,
+		            	version          : 'v8.0'
+		          	});
+		        };
+
+		        (function(d, s, id) {
+				        var js, fjs = d.getElementsByTagName(s)[0];
+				        if (d.getElementById(id)) return;
+				        js = d.createElement(s); js.id = id;
+				        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+				        fjs.parentNode.insertBefore(js, fjs);
+				 }(document, 'script', 'facebook-jssdk'));
+		  	</script>
 	</body>
 </html>
