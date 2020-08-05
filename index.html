@@ -75,6 +75,24 @@
 				</div>
 				<!-- Load Facebook SDK for JavaScript -->
       		<div id="fb-root"></div>
+      		<script>
+				window.fbAsyncInit = function() {
+				    FB.init({
+				      appId            : '395607541412475',
+				      autoLogAppEvents : true,
+				      xfbml            : true,
+				      version          : 'v8.0'
+				    });
+				  };
+
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
       			<!-- Your Chat Plugin code -->
 		      <div class="fb-customerchat" attribution=setup_tool page_id="107359324125283" 
 		      		theme_color="#13cf13"
@@ -235,6 +253,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 		
 		<script src="assets/js/particle.js"></script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 		<script type="text/javascript">
 			particlesJS.load('particles', 'assets/particles.json', function() {
 					console.log('callback - particle.js config loaded');
@@ -253,22 +272,5 @@
 			  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
 			});
         </script>
-
-        <script>
-		        window.fbAsyncInit = function() {
-		          	FB.init({
-		            	xfbml            : true,
-		            	version          : 'v8.0'
-		          	});
-		        };
-
-		        (function(d, s, id) {
-				        var js, fjs = d.getElementsByTagName(s)[0];
-				        if (d.getElementById(id)) return;
-				        js = d.createElement(s); js.id = id;
-				        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				        fjs.parentNode.insertBefore(js, fjs);
-				 }(document, 'script', 'facebook-jssdk'));
-		  	</script>
 	</body>
 </html>
