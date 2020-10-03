@@ -160,7 +160,7 @@
 					<div class="row row-cols-1 row-cols-md-3 g-4">
 						<div class="col" data-aos="zoom-in">
 						  	<div class="card h-100 shadow" >
-								<img src="images/claims.png" class="card-img-top img-fluid" alt="Ronil Cajan Loan Application">
+								<img src="images/gtcc.png" class="card-img-top img-fluid" alt="Ronil Cajan Loan Application">
 								<div class="card-body">
 								  	<h5 class="card-title font-weight-bold">The Conference Center at Guilford Technical
 										Community College</h5>
@@ -180,7 +180,7 @@
 						</div>
 					  	<div class="col" data-aos="zoom-in">
 						  	<div class="card h-100 shadow">
-							  	<img src="images/shoutout.png" class="card-img-top img-fluid" alt="Ronil Cajan ShoutOut">
+							  	<img src="images/coronado.png" class="card-img-top img-fluid" alt="Ronil Cajan ShoutOut">
 							  	<div class="card-body">
 								   <h5 class="card-title font-weight-bold">Coronado Tree Services</h5>
 								   <p class="card-text">This is a website built Elementor Builder in WordPress.</p>
@@ -199,7 +199,7 @@
 					  	</div>
 					  	<div class="col" data-aos="zoom-in">
 						  	<div class="card h-100 shadow">
-								<img src="images/pos.png" class="card-img-top img-fluid" alt="Ronil Cajan Point of Sale">
+								<img src="images/allcounty.png" class="card-img-top img-fluid" alt="Ronil Cajan Point of Sale">
 								<div class="card-body">
 								  	<h5 class="card-title font-weight-bold">All County Pools & Spa Inc.</h5>
 								  	<p class="card-text">This is a website built Elementor Builder in WordPress.</p>
@@ -266,7 +266,7 @@
 				<!--Grid row-->
 				<div class="row">
 					<!--Grid column-->
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center"  data-aos="zoom-in">
 						<div class="testimonial">
 						<!--Avatar-->
 						<div class="avatar mx-auto">
@@ -279,13 +279,13 @@
 						<h6 class="font-weight-bold blue-text my-3">Ministre de l'intérieur Maroc</h6>
 						<p class="font-weight-normal dark-grey-text">
 							<i class="fas fa-quote-left pr-2"></i>Using Ronil's web services to create a web application that generate pdf according to selected option and upload excel and inserted 
-							to database makes the work fast and accurate</p>
+							to database makes the work fast and accurate.</p>
 						</div>
 				
 					</div>
 	  				<!--Grid column-->
 					<!--Grid column-->
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" data-aos="zoom-in">
 				
 						<div class="testimonial">
 						<!--Avatar-->
@@ -305,7 +305,7 @@
 					</div>
 	  				<!--Grid column-->
 					<!--Grid column-->
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" data-aos="zoom-in">
 				
 						<div class="testimonial">
 						<!--Avatar-->
@@ -352,7 +352,7 @@
 					<a class="nav-link" href="https://www.onlinejobs.ph/jobseekers/info/1224878" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> Onlinejobs.ph</a>
 				</div>
 			</section>
-			<button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-success">Top</button>
+			<button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-success"><i class="icon" data-feather="chevrons-up"></i></button>
 			<!-- Footer -->
 		    <footer class="bg-dark text-center text-light">
 		        <div class="container">
@@ -404,7 +404,8 @@
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
 				document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				// document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				$("html, body").animate({ scrollTop: $("#navbarNav").offset().top }, 1000);
 			}
         </script>
 	</body>
